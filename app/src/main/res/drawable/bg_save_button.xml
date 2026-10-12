@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Soft 3D (claymorphism + neumorphism): light edge top-left, dark edge bottom-right -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="3dp" android:top="3dp">
+        <shape android:shape="rectangle"><solid android:color="#7A2A63" /><corners android:radius="26dp" /></shape>
+    </item>
+    <item android:right="3dp" android:bottom="3dp">
+        <shape android:shape="rectangle"><solid android:color="#FFB3D1" /><corners android:radius="26dp" /></shape>
+    </item>
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <gradient android:angle="315" android:startColor="#FF6AA2" android:endColor="#B76CF0" />
+            <corners android:radius="26dp" />
+        </shape>
+    </item>
+</layer-list>

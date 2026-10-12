@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pressed-in soft 3D field: dark edge top-left, light edge bottom-right -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="3dp" android:bottom="3dp">
+        <shape android:shape="rectangle"><solid android:color="#120620" /><corners android:radius="14dp" /></shape>
+    </item>
+    <item android:left="3dp" android:top="3dp">
+        <shape android:shape="rectangle"><solid android:color="#452A69" /><corners android:radius="14dp" /></shape>
+    </item>
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle"><solid android:color="#1F0F36" /><corners android:radius="14dp" /></shape>
+    </item>
+</layer-list>

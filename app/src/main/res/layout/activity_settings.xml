@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#241338"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.3"
+            android:text="SETTINGS"
+            android:textColor="#FF4D8D"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/contactBtn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_prime_badge"
+            android:backgroundTint="@null"
+            android:text="📞 CONTACT / SUPPORT"
+            android:textColor="#FF8FB8" />
+
+        <TextView style="@style/MyraLabel" android:text="GEMINI API KEY" />
+        <EditText
+            android:id="@+id/apiKeyInput"
+            style="@style/MyraInput"
+            android:hint="AIza..."
+            android:inputType="textPassword" />
+
+        <TextView style="@style/MyraLabel" android:text="TEXT AI (website builder)" />
+        <Spinner
+            android:id="@+id/providerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field" />
+
+        <TextView style="@style/MyraLabel" android:text="CLAUDE API KEY (sirf Claude chunne par)" />
+        <EditText
+            android:id="@+id/claudeKeyInput"
+            style="@style/MyraInput"
+            android:hint="sk-ant-..."
+            android:inputType="textPassword" />
+
+        <TextView style="@style/MyraLabel" android:text="YOUR NAME" />
+        <EditText
+            android:id="@+id/userNameInput"
+            style="@style/MyraInput"
+            android:hint="Aapka naam"
+            android:inputType="textPersonName" />
+
+        <TextView style="@style/MyraLabel" android:text="AI MODEL" />
+        <Spinner
+            android:id="@+id/modelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field" />
+
+        <TextView style="@style/MyraLabel" android:text="VOICE" />
+        <Spinner
+            android:id="@+id/voiceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field" />
+
+        <TextView style="@style/MyraLabel" android:text="PERSONALITY" />
+        <RadioGroup
+            android:id="@+id/personalityGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGf"
+                style="@style/MyraRadio"
+                android:text="💖 GF Mode (Hinglish)" />
+            <RadioButton
+                android:id="@+id/radioPro"
+                style="@style/MyraRadio"
+                android:text="💼 Professional (English)" />
+            <RadioButton
+                android:id="@+id/radioAssistant"
+                style="@style/MyraRadio"
+                android:text="🤖 Assistant" />
+        </RadioGroup>
+
+        <TextView style="@style/MyraLabel" android:text="LANGUAGE / ভাষা" />
+        <RadioGroup
+            android:id="@+id/languageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioLangHinglish"
+                style="@style/MyraRadio"
+                android:text="Hinglish (Hindi + English)" />
+            <RadioButton
+                android:id="@+id/radioLangBangla"
+                style="@style/MyraRadio"
+                android:text="বাংলা (Bangla)" />
+            <RadioButton
+                android:id="@+id/radioLangEnglish"
+                style="@style/MyraRadio"
+                android:text="English" />
+        </RadioGroup>
+
+        <TextView style="@style/MyraLabel" android:text="AVATAR (ladki ka chehra)" />
+        <Button
+            android:id="@+id/pickPhotoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_prime_badge"
+            android:backgroundTint="@null"
+            android:text="📷 REAL PHOTO CHUNO"
+            android:textColor="#FF8FB8" />
+        <Button
+            android:id="@+id/removePhotoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_prime_badge"
+            android:backgroundTint="@null"
+            android:text="DEFAULT PHOTO WAPAS"
+            android:textColor="#FF8FB8" />
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/muteWhileSpeakingSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mute mic while MYRA speaks (use if she hears herself)"
+            android:textColor="#FFF0F6"
+            android:textSize="13sp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/hapticSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Haptic feedback (buttons dabane par halka vibration)"
+            android:textColor="#FFF0F6"
+            android:textSize="13sp" />
+
+        <TextView style="@style/MyraLabel" android:text="AUTOMATION PERMISSIONS" />
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/autoPaySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Automated Payments Confirmation (OFF: MYRA Pay / Place Order / Send Money khud nahi dabayegi)"
+            android:textColor="#FFF0F6"
+            android:textSize="13sp" />
+
+        <TextView style="@style/MyraLabel" android:text="PRIME CONTACTS" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/primeRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:id="@+id/addPrimeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@null"
+            android:background="@drawable/bg_prime_badge"
+            android:text="ADD PRIME CONTACT"
+            android:textColor="#FF4D8D" />
+
+        <TextView style="@style/MyraLabel" android:text="PERMISSIONS" />
+        <TextView
+            android:id="@+id/accessStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/overlayStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/licenseStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/batteryStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@null"
+            android:background="@drawable/bg_save_button"
+            android:text="SAVE"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
